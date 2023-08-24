@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb2260a842.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- /*header is an id of div...use # for id   -->
+    <div id="header">   
+         <!-- container is a class....use '.' for class -->
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">                        <!--unordered list-->
+                    <li><a href="#header">Home</a></li>          <!--to duplicate ,use shift+alt+down/up-->
+                    <li><a href="#about">About</a></li>          <!--anchor tag-->
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I am <br><span>Riya Mohod.</span></h1>
+            </div>
+        </div>
+    </div>
+    <!------------------ABOUT SECTION------------------->
+    <div id="about">          <!--the second part-->
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">           <!--creating 2 columns-->
+                    <img src="download.png">      <!--first column has image-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>          <!--second has text-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nostrum consequatur vitae, esse amet dolores, eaque nihil et cumque quos dolor totam, illum quis explicabo magni provident aperiam quo ullam!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>  <!--to click on it and then content of that element is visible-->
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>  <!--opentab is a function-->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UiPath</span><br>Set up software robots that collect and interpret data.</li>
+                            <li><span>Python</span><br>Knowledge of python frameworks and event-driven programming in python.</li>
+                            <li><span>PowerBi</span><br>Development and administration of BI tools.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-2022</span><br>Application Development Associate at Accenture, Mumbai</li>
+                            <li><span>Nov'19-May'20</span><br>Trainee at Starsun Techonology, Pune</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-23</span><br>Masters in Data Science and AI at University of Liverpool, Liverpool</li>
+                            <li><span>2016-2020</span><br>Electronics and Telecommunication Engineeering from G.H. Raisoni College of Engineering, Nagpur</li>
+                            <li><span>2016</span><br>HSC from Shivaji Science College, Nagpur</li>
+                            <li><span>2014</span><br>SSC from Sanskar Vidya Sagar, Umrer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!----------------Services section------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UiPath</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam consequatur facere numquam! Sunt dicta reprehenderit dignissimos ad, suscipit debitis impedit error. Rerum quo, modi consequuntur delectus recusandae possimus odit consectetur?</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam consequatur facere numquam! Sunt dicta reprehenderit dignissimos ad, suscipit debitis impedit error. Rerum quo, modi consequuntur delectus recusandae possimus odit consectetur?</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>PowerBi</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam consequatur facere numquam! Sunt dicta reprehenderit dignissimos ad, suscipit debitis impedit error. Rerum quo, modi consequuntur delectus recusandae possimus odit consectetur?</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="work1.jpg">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, aperiam.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, aperiam.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, aperiam.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>riyamohod1999@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7841972991</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/riya-mohod8599"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Riya_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>  <!--create a form using this syntax-->
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Riya.</p>
+        </div>
+    </div>
+    <script>       //for javascript
+        var tablinks = document.getElementsByClassName("tab-links");       
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)    //definition of  opentab function    
+        {
+            for(tablink of tablinks)          
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }   
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function  openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function  closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbyFKJ9rQqDlZBE5NXEkXq0ZSbXcZLkf7WcKnGiMJ6D33nNSpRci5txiMZu9gmxkRP2QDQ/exec>'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
